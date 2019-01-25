@@ -8,12 +8,8 @@ https://angular.io/guide/universal
 1. run "npm run ssr" to build and run server
 2. On a second window, run "ng serve"
 3. Open a browser in "http://localhost:4200"
-*Make sure to run a CORS disabled browser during development, as the NodeJS and Angular Cli ports are different.
 
-"npm run build:ssr": will build both front-end and back-end and will output the compiled files in "dist" directory on the root.
-"npm run build": Quick build. No minify, uglify.
-"npm run serve:ssr" Will simply serve the back-end without building
-"npm run ssr" Builds both front-end and back-end. Then runs the server.
+*Make sure to run a CORS disabled browser during development, as the NodeJS and Angular Cli ports are different.
 
 To find the full list of commands visit package.json 
 https://github.com/AFigueroa/ssr-prototype/blob/master/package.json
