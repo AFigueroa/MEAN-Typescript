@@ -1,46 +1,19 @@
-# Unofficial Angular Universal Starter
+# Server-side Rendered Angular Boilerplate
 
-![Angular Universal](https://angular.io/assets/images/logos/concept-icons/universal.png)
+This boilerplate app let's you quikly get up and running with a server-side rendered Angular and NodeJS environments. Express is used as the server-side framework written in Typescript. Mongoose is used to enforce schemas and data types on objects. The front end has the full Angular Universal project including the Tour of Heroes CRUD (Create, Read, Update, Delete) functionality but rewired to be stored in a MongoDB database.
 
-A minimal Angular starter for Universal JavaScript using the [Angular CLI](https://github.com/angular/angular-cli)
-If you're looking for the Angular Universal repo go to [**angular/universal**](https://github.com/angular/universal)  
+https://angular.io/guide/universal
 
-## Getting Started
+# How to use
+1. run "npm run ssr" to build and run server
+2. On a second window, run "ng serve"
+3. Open a browser in "http://localhost:4200"
+*Make sure to run a CORS disabled browser during development, as the NodeJS and Angular Cli ports are different.
 
-This demo is built following the [Angular-CLI Wiki guide](https://github.com/angular/angular-cli/wiki/stories-universal-rendering)
+"npm run build:ssr": will build both front-end and back-end and will output the compiled files in "dist" directory on the root.
+"npm run build": Quick build. No minify, uglify.
+"npm run serve:ssr" Will simply serve the back-end without building
+"npm run ssr" Builds both front-end and back-end. Then runs the server.
 
-We're utilizing packages from the [Angular Universal @nguniversal](https://github.com/angular/universal) repo, such as [ng-module-map-ngfactory-loader](https://github.com/angular/universal/modules/module-map-ngfactory-loader) to enable Lazy Loading.
-
----
-
-### Build Time Prerendering Vs. Server Side Rendering(ssr)
-This repo demonstrates the use of 2 different forms of Server Side Rendering.
-
-**Prerender** 
-* Happens at build time
-* Renders your application and replaces the dist index.html with a version rendered at the route `/`.
-
-**Server-Side Rendering(ssr)**
-* Happens at runtime
-* Uses `ngExpressEngine` to render your application on the fly at the requested url.
-
----
-
-### Installation
-* `npm install` or `yarn`
-
-### Development (Client-side only rendering)
-* run `npm run start` which will start `ng serve`
-
-### Production (also for testing SSR/Pre-rendering locally)
-**`npm run build:ssr && npm run serve:ssr`** - Compiles your application and spins up a Node Express to serve your Universal application on `http://localhost:4000`.
-
-**`npm run build:prerender && npm run serve:prerender`** - Compiles your application and prerenders your applications files, spinning up a demo http-server so you can view it on `http://localhost:8080`
-**Note**: To deploy your static site to a static hosting platform you will have to deploy the `dist/browser` folder, rather than the usual `dist`
-
-
-## Universal "Gotchas"
-Moved to [/angular/universal/blob/master/docs/gotchas.md](https://github.com/angular/universal/blob/master/docs/gotchas.md)
-
-# License
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](/LICENSE)
+To find the full list of commands visit package.json 
+https://github.com/AFigueroa/ssr-prototype/blob/master/package.json
