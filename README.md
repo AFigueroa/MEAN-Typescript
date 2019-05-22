@@ -5,9 +5,10 @@ This boilerplate app let's you quikly get up and running with a server-side rend
 https://angular.io/guide/universal
 
 # How to use
-1. run "npm run ssr" to build and run server
-2. On a second window, run "ng serve"
-3. Open a browser in "http://localhost:4200"
+1. Using Command Prompt, navigate to the root of the project and run "npm install"
+2. Run "npm run ssr" to build and serve server
+3. On a second window, run "ng serve"
+4. Open a browser in "http://localhost:4200"
 
 *Make sure to run a CORS disabled browser during development, as the NodeJS and Angular Cli ports are different.
 
