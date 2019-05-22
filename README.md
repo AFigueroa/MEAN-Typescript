@@ -10,6 +10,11 @@ https://angular.io/guide/universal
 3. On a second window, run "ng serve"
 4. Open a browser in "http://localhost:4200"
 
+# Requirements
+1. MongoDB
+2. NodeJS & NPM
+3. AngularCLI
+
 *Make sure to run a CORS disabled browser during development, as the NodeJS and Angular Cli ports are different.
 
 To find the full list of commands visit package.json 
